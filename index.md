@@ -6,6 +6,10 @@ layout: default
 // remove button.
 document.getElementsByClassName('page-header')[0].children[2].style.display = 'none';
 
+
+document.getElementsByClassName('site-footer-owner')[0].style.display = 'none';
+document.getElementsByClassName('site-footer-credits')[0].style.display = 'none';
+
 // const elem = document.querySelector('.page-header')
 
 /*
@@ -18,7 +22,8 @@ elem.parentNode.removeChild(elem)
 </script>
 
 
-Welcome to the Image Analysis for CTA Endovascular Stroke Therapy (IACTA-EST) Data Challenge! This date challenge is he 
+Welcome to the Image Analysis for CTA Endovascular Stroke Therapy (IACTA-EST) Data Challenge! A date challenge part of the [2023 IEEE International Symposium on Biomedical Imaging (ISBI)](http://2023.biomedicalimaging.org/en/CHALLENGES.html). 
+
 
 
 # Introduction
@@ -58,8 +63,8 @@ Our tentative schedule is as follows:
 - 18 April 2023: Finalist presentations and final challenge at ISBI 2023.
 
 
-### Other information
+### Other Information
 
 The top-performing participating teams and individuals (based on the performance of their method) will be invited to contribute to a joint journal paper describing and summarizing the methods used, and the results found during the challenge. 
 
-
+This page is actively updated, come back soon for more information. 
