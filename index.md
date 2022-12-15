@@ -2,9 +2,11 @@
 layout: default
 ---
 
-```js
+<script>
 // remove button.
 document.getElementsByClassName('page-header')[0].children[2].style.display = 'none';
+
+// const elem = document.querySelector('.page-header')
 
 /*
 // grab element you want to hide
@@ -13,7 +15,7 @@ const elem = document.querySelector('#hint')
 // remove element
 elem.parentNode.removeChild(elem)
 */
-```
+</script>
 
 
 Welcome to the Image Analysis for CTA Endovascular Stroke Therapy (IACTA-EST) Data Challenge! This date challenge is he 
