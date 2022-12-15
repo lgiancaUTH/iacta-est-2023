@@ -7,8 +7,21 @@ layout: default
 document.getElementsByClassName('page-header')[0].children[2].style.display = 'none';
 
 
-document.getElementsByClassName('site-footer-owner')[0].style.display = 'none';
-document.getElementsByClassName('site-footer-credits')[0].style.display = 'none';
+document.addEventListener('readystatechange', event => { 
+
+    // // When HTML/DOM elements are ready:
+    // if (event.target.readyState === "interactive") {   //does same as:  ..addEventListener("DOMContentLoaded"..
+    //     alert("hi 1");
+    // }
+
+    // When window loaded ( external resources are loaded too- `css`,`src`, etc...) 
+    if (event.target.readyState === "complete") {
+      document.getElementsByClassName('site-footer-owner')[0].style.display = 'none';
+      document.getElementsByClassName('site-footer-credits')[0].style.display = 'none';
+    }
+});
+
+
 
 // const elem = document.querySelector('.page-header')
 
@@ -36,7 +49,7 @@ These two tasks will enable participants to start working on brain CTA, a modali
 
 ## Data and Challenge
 
-This challenge will be divided into two tasks: (1) LVO detection and (2) Brain Reperfusion Prediction. The data is sourced in accordance with the guidelines from the Helsinki Declaration and under IRB HSC-MS-19-0630 approved by the University of Texas Health Science Center (UTHealth) IRB and Memorial Hermann Hospital, which allows data sharing without any Protected Health Information (PHI) for non-commercial scientific purposes, license CC BY-NC-ND 4.0. All data have been retrieved from Stroke centers in Houston, TX, USA, as part of a federally funded grant (R01NS121154) and a UTHealth Learning Health Care grant. 
+This challenge will be divided into two tasks: (1) LVO detection and (2) Brain Reperfusion Prediction. The data is sourced in accordance with the guidelines from the Helsinki Declaration and under IRB HSC-MS-19-0630 approved by the University of Texas Health Science Center (UTHealth) IRB and Memorial Hermann Hospital, which allows data sharing without any Protected Health Information (PHI) for non-commercial scientific purposes, license CC BY-NC-ND 4.0. All data have been retrieved from Stroke centers in Houston, TX, USA, as part of a federally funded grant (R01NS121154) and a UTHealth Learning Healthcare grant. 
 
 For the first challenge, LVO detection, data will include a training+validation set released to the participants in the first phase of the challenge, and another test set which will be released during the second phase.  Each subject will have a single CTA image acquired during the acute stroke phase prior to any EST, and it will include stroke mimics, ischemic stroke subjects without LVO, and ischemic stroke subjects with LVO. CTA images will be released to the participants after undergoing a preprocessing pipeline involving resampling to a common image template, rigid registration, and skull-stripping. LVO labels are manually extracted from the stroke centers' neuroradiologist reports. An LVO will be defined as an occlusion in the ICA, M1, M2, or A1 brain vasculature. High-grade stenosis or near-complete occlusions will not be considered LVOs. Posterior circulation stroke and LVO in other segments will be excluded. The class distribution for this classification task is not chosen according to the real-world distribution that a primary care hospital might see, as otherwise, we would have to include order of magnitude more controls. However, we will include subjects that could easily confound an LVO detection system, such as subjects with ischemic or hemorrhagic stroke, but without LVO and subjects with old strokes. Age, sex, stroke status, and other potential confounding variables will be kept equally distributed between the training/validation and test sets.
 
@@ -46,7 +59,7 @@ For the second challenge, Brain Reperfusion Prediction, data will only contain s
 
 ### Evaluation
 
-The evaluation will be set up using an automated system through provisions on grand-challenge.org for evaluating the results submitted by the participating teams. In the first phase, we will release only the training and validation set and display the ranking on the leaderboard based on the performance on the validation set. Then, in the second phase, we will release the test data and display the participants' ranking based on the hidden labels of the test set. 
+ In the first phase, we will release only the training and validation set and display the ranking on the leaderboard based on the performance on the validation set. Then, in the second phase, we will release the test data and display the participants' ranking based on the hidden labels of the test set. 
 
 Participants will be allowed 3 submissions per day in the first phase, and only the best run will be officially counted towards placement in the leaderboard. In the second testing phase, only a single submission will be allowed (exceptions will be considered in case of obvious technical issues). The invited teams must submit a paper in appropriate ISBI style to the organizers explaining their algorithm.
 
