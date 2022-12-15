@@ -2,122 +2,62 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
 ```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
+// remove button.
+document.getElementsByClassName('page-header')[0].children[2].style.display = 'none';
+
+/*
+// grab element you want to hide
+const elem = document.querySelector('#hint')
+
+// remove element
+elem.parentNode.removeChild(elem)
+*/
 ```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
 
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+Welcome to the Image Analysis for CTA Endovascular Stroke Therapy (IACTA-EST) Data Challenge! This date challenge is he 
 
 
-### Definition lists can be used with HTML syntax.
+# Introduction
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+Large vessel occlusion (LVO) denotes the obstruction of large, proximal cerebral arteries and accounts for 24–46% of acute ischemic stroke (AIS). Due to the involvement of proximal vasculature, significant brain regions are often affected, resulting in large neurological deficits. Brain CT-Angiography (CTA) is an imaging modality available in the vast majority of hospitals 24/7, which is typically used to identify LVO. A quick identification is essential to enable endovascular stroke therapy (EST), a life-saving treatment. EST is a procedure that mechanically removes the clot from the brain blood vessel causing the LVO by mechanical means with a stent. To facilitate this, automated imaging-based tools to detect LVO have been shown to reduce the time for EST, leading to better clinical outcomes. While commercial solutions have recently addressed this medical image computing application, no comparative tests on a common dataset have been performed. We aim to bridge this gap with the first task of the Image Analysis for CTA Endovascular Stroke Therapy (IACTA-EST) Data Challenge by providing a curated imaging dataset from multiple clinical sites with evaluation metrics. 
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+Additionally, the IACTA-EST challenge will evaluate the participants’ ability to predict the success of EST by combining CTA and clinical variables, addressing an unmet medical need. Currently, the main metrics to undergo an EST is the size of the stroke. However, it is not clear how well this data combination, which is widely available in stroke centers, and advanced medical image computing predictive models will be able to predict the success of clot retrieval in EST during the first pass. 
 
-```
-The final element.
-```
+These two tasks will enable participants to start working on brain CTA, a modality rarely available in public datasets, combining imaging and clinical variables and addressing critical medical needs in stroke care. 
+
+## Data and Challenge
+
+This challenge will be divided into two tasks: (1) LVO detection and (2) Brain Reperfusion Prediction. The data is sourced in accordance with the guidelines from the Helsinki Declaration and under IRB HSC-MS-19-0630 approved by the University of Texas Health Science Center (UTHealth) IRB and Memorial Hermann Hospital, which allows data sharing without any Protected Health Information (PHI) for non-commercial scientific purposes, license CC BY-NC-ND 4.0. All data have been retrieved from Stroke centers in Houston, TX, USA, as part of a federally funded grant (R01NS121154) and a UTHealth Learning Health Care grant. 
+
+For the first challenge, LVO detection, data will include a training+validation set released to the participants in the first phase of the challenge, and another test set which will be released during the second phase.  Each subject will have a single CTA image acquired during the acute stroke phase prior to any EST, and it will include stroke mimics, ischemic stroke subjects without LVO, and ischemic stroke subjects with LVO. CTA images will be released to the participants after undergoing a preprocessing pipeline involving resampling to a common image template, rigid registration, and skull-stripping. LVO labels are manually extracted from the stroke centers' neuroradiologist reports. An LVO will be defined as an occlusion in the ICA, M1, M2, or A1 brain vasculature. High-grade stenosis or near-complete occlusions will not be considered LVOs. Posterior circulation stroke and LVO in other segments will be excluded. The class distribution for this classification task is not chosen according to the real-world distribution that a primary care hospital might see, as otherwise, we would have to include order of magnitude more controls. However, we will include subjects that could easily confound an LVO detection system, such as subjects with ischemic or hemorrhagic stroke, but without LVO and subjects with old strokes. Age, sex, stroke status, and other potential confounding variables will be kept equally distributed between the training/validation and test sets.
+
+
+For the second challenge, Brain Reperfusion Prediction, data will only contain subjects with LVO separate from the ones used for the first task. The dataset for the training+validation will be released to the participants in the first phase of the challenge and another test set will be released during the second phase.  In addition to the CTA images, we will provide the following clinical variables: Age at the time of imaging, Sex, Race, Ethnicity, and NIH Stroke Scale. The participants will be encouraged to use transfer learning or other strategies that would allow leveraging the model learned for LVO detection for this task. The label used will be the success of clot retrieval in the first pass with complete revascularization of the large vessel occlusion and its downstream territory.
+
+
+### Evaluation
+
+The evaluation will be set up using an automated system through provisions on grand-challenge.org for evaluating the results submitted by the participating teams. In the first phase, we will release only the training and validation set and display the ranking on the leaderboard based on the performance on the validation set. Then, in the second phase, we will release the test data and display the participants' ranking based on the hidden labels of the test set. 
+
+Participants will be allowed 3 submissions per day in the first phase, and only the best run will be officially counted towards placement in the leaderboard. In the second testing phase, only a single submission will be allowed (exceptions will be considered in case of obvious technical issues). The invited teams must submit a paper in appropriate ISBI style to the organizers explaining their algorithm.
+
+External datasets used for training are allowed as long as they are publicly available and clearly described.
+
+The final scores will be given independently for the two tasks. In both cases, they will be based on Area under the curve (AUC) and Average precision score (mAP) as: Final score = 0.5*AUC + 0.5*mAP.
+
+### Important Dates
+Our tentative schedule is as follows:
+- 15 Jan 2022: Data Release and Submissions open for evaluation of results (on common validation set). 
+- 15 Mar 2023: Test set released (with hidden labels). Segmentation results of this phase can only be submitted once.
+- 18 Mar 2023: ISBI registration deadline
+- 20 Mar 2023: Final off-site leaderboard update and the display of top teams upon participation confirmation. 
+- 18 April 2023: Finalist presentations and final challenge at ISBI 2023.
+
+
+### Other information
+
+The top-performing participating teams and individuals (based on the performance of their method) will be invited to contribute to a joint journal paper describing and summarizing the methods used, and the results found during the challenge. 
+
+
