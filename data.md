@@ -14,7 +14,7 @@ All CTA images were first converted from DICOM to Nifti format, skull stripped, 
 
 LVO labels are manually extracted from the stroke centers' neuroradiologist reports. An LVO will be defined as an occlusion in the ICA, M1, M2, or A1 brain vasculature. High-grade stenosis or near-complete occlusions will not be considered LVOs. Posterior circulation stroke and LVO in other segments are excluded. The class distribution for this classification task is not chosen according to the real-world distribution that a primary care hospital might see, as otherwise, we would have to include order of magnitude more controls.
 
-<img src="{{site.url}}/res/cta-example.jpg" style="display: block; margin: auto;" />
+<img src="res/cta-example.jpg" style="display: block; margin: auto;" />
 
 # Clinical Data
 
