@@ -1,2 +1,5 @@
 _notes.txt
 example.md
+.DS_Store
+Gemfile.lock
+_site
