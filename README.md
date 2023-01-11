@@ -1,1 +1,1 @@
-Repository for the Image Analysis for CTA Endovascular Stroke Therapy (IACTA-EST) Data Challenge! A date challenge part of the [2023 IEEE International Symposium on Biomedical Imaging (ISBI)](http://2023.biomedicalimaging.org/en/CHALLENGES.html).
+Repository for the Image Analysis for CTA Endovascular Stroke Therapy (IACTA-EST) Data Challenge! A data challenge part of the [2023 IEEE International Symposium on Biomedical Imaging (ISBI)](http://2023.biomedicalimaging.org/en/CHALLENGES.html).
