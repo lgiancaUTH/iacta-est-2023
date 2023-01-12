@@ -58,3 +58,59 @@ The results should be submitted as CSV files with two columns, one for the subje
 - [Phase 1 Task 2](res/subm-example-task2-phase1-random.csv)
 
 The scores included have been randomly generated.
+
+
+# Data Structure
+
+
+```text
+Phase 1 - Task 1
+    [task1]
+        [imgTr]
+            - sub-0001.nii.gz # CTA for subject sub-0001
+            - sub-0002.nii.gz # CTA for subject sub-0002
+            ...
+            #These are the  subjects for which the "lvo" label is available  
+        [imgVal]
+            ...
+            # These are the subjects for the phase 1 test. "lvo" labels are hidden, and need to be predicted. 
+            # Use these subjects to create your "Phase 1 - Task 1" submission
+
+        task1_train_info.csv # CSV file containing the "lvo" label for each subject in imgTr
+
+
+Phase 1 - Task 2
+    [task2]
+        [imgTr]
+            ...
+            #These are the  subjects for which the "ticiGt2b" label is available  
+        [imgVal]
+            ...
+            # These are the subjects for the phase 1 test. "ticiGt2b" labels are hidden, and need to be predicted.
+            # Use these subjects to create your "Phase 1 - Task 2" submission   
+        
+        task2_train_info.csv # CSV file containing the "ticiGt2b" label for each subject in imgTr, and all 
+                             # clinical variables that can be used as input for the model, e.g. age,gender,race,
+                             # cta_occlusion_site,tpa,lkw2ct,baseline_nihss. There are missing clinical variables.
+                             # As there is only a single CSV file for all phases, missing "ticiGt2b" variables indicate
+                             # that the subject is either in test set of "phase 1 task 2" or test st of "phase 2 task 2"
+
+
+Phase 2 - Task 1
+    [task1]
+        [imgTe]
+            ...
+            # These are the subjects for the phase 2 test. "lvo" labels are hidden, and need to be predicted. 
+            # Use these subjects to create your "Phase 2 - Task 1" submission 
+
+
+Phase 2 - Task 2
+    [task2]
+        [imgTe]
+            ...
+            # These are the subjects for the phase 2 test. "ticiGt2b" labels are hidden, and need to be predicted.
+            # Clinical variables to be used as input for these subjects are in task2_train_info.csv
+            # Use these subjects to create your "Phase 2 - Task 2" submission 
+            
+
+```

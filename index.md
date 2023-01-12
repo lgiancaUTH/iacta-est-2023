@@ -43,10 +43,9 @@ The team can register at the Submission and Leaderboard page by submitting a req
 
 ## Important Dates
 Our tentative schedule is as follows:
-- 15 Jan 2022: Data Release and Submissions open for evaluation of results (on common validation set). 
-- 15 Mar 2023: Test set released (with hidden labels). Segmentation results of this phase can only be submitted once.
-- 18 Mar 2023: ISBI registration deadline
-- 20 Mar 2023: Final off-site leaderboard update and the display of top teams upon participation confirmation. 
+- 15 Jan 2022: Phase 1. Data Released and registration/submissions system open for evaluation of results. 
+- 15 Mar 2023: Phase 2. Test set released. Segmentation results of this phase can only be submitted twice (only best results will be considered).
+- 20 Mar 2023: Submission closed. Final off-site leaderboard update and the display of top teams upon participation confirmation. 
 - 18 April 2023: Finalist presentations and final challenge at ISBI 2023.
 
 ## Other Information
