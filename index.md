@@ -42,7 +42,6 @@ More information about the format of the submission is available [here](data-inf
 The team can register at the Submission and Leaderboard page by submitting a request with a valid email address. The organizers will manually activate the account and the participants will receive a confirmation email. 
 
 ## Important Dates
-Our tentative schedule is as follows:
 - 15 Jan 2023: Phase 1. Data Released and registration/submissions system open for evaluation of results. 
 - 15 Mar 2023: Phase 2. Test set released. Segmentation results of this phase can only be submitted twice (only best results will be considered).
 - 20 Mar 2023: Submission closed. Final off-site leaderboard update and the display of top teams upon participation confirmation. 
