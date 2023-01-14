@@ -7,7 +7,7 @@ layout: default
 
 Welcome to the Image Analysis for CTA Endovascular Stroke Therapy (IACTA-EST) Data Challenge! A date challenge part of the [2023 IEEE International Symposium on Biomedical Imaging (ISBI)](http://2023.biomedicalimaging.org/en/CHALLENGES.html). 
 
-<span style="color:red">Phase 1 has started! Please, register your team and wait for the activation email to start the challenge</span>
+<span style="color:red">Phase 1 has started! Please, register your team [here](./leaderboard) and wait for the activation email to start the challenge</span>
 # Introduction
 
 Large vessel occlusion (LVO) denotes the obstruction of large, proximal cerebral arteries and accounts for 24–46% of acute ischemic stroke (AIS). Due to the involvement of proximal vasculature, significant brain regions are often affected, resulting in large neurological deficits. Brain CT-Angiography (CTA) is an imaging modality available in the vast majority of hospitals 24/7, which is typically used to identify LVO. A quick identification is essential to enable endovascular stroke therapy (EST), a life-saving treatment. EST is a procedure that mechanically removes the clot from the brain blood vessel causing the LVO by mechanical means with a stent. To facilitate this, automated imaging-based tools to detect LVO have been shown to reduce the time for EST, leading to better clinical outcomes. While commercial solutions have recently addressed this medical image computing application, no comparative tests on a common dataset have been performed. We aim to bridge this gap with the first task of the Image Analysis for CTA Endovascular Stroke Therapy (IACTA-EST) Data Challenge by providing a curated imaging dataset from multiple clinical sites with evaluation metrics. 
