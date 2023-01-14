@@ -4,15 +4,15 @@
 //add menu buttons
 
 
-// var menuBar = ' \
-// <a href="https://github.com/lgiancaUTH/iacta-est-2023/" class="btn">Home</a> \
-// <a href="https://github.com/lgiancaUTH/iacta-est-2023/data-info" class="btn">Data Info</a> \
-// <a href="https://github.com/lgiancaUTH/iacta-est-2023/leaderboard" class="btn">Submission and Leaderboard</a> \
-// ';
-
 var menuBar = ' \
 <a href="./" class="btn">Home</a> \
-<a href="data-info" class="btn">Data Info</a>';
+<a href="data-info" class="btn">Data Info</a> \
+<a href="leaderboard" class="btn">Submission and Leaderboard</a> \
+';
+
+// var menuBar = ' \
+// <a href="./" class="btn">Home</a> \
+// <a href="data-info" class="btn">Data Info</a>';
 
 document.getElementsByClassName('page-header')[0].children[2].outerHTML = menuBar;
 //add logo
