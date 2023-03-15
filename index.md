@@ -7,7 +7,7 @@ layout: default
 
 Welcome to the Image Analysis for CTA Endovascular Stroke Therapy (IACTA-EST) Data Challenge! A date challenge part of the [2023 IEEE International Symposium on Biomedical Imaging (ISBI)](http://2023.biomedicalimaging.org/en/CHALLENGES.html). 
 
-<span style="color:red">- 15 Mar 2023 - Phase 2 has started! Please, download the final datasets [here](./leaderboard) and submit your final results</span> <br />
+<span style="color:red">- 15 Mar 2023 - Phase 2 has started! Please, download the final datasets [here](./leaderboard) and submit your final results by March 20, 2023</span> <br />
 
 <span style="color:red"> - 15 Jan 2023 - Phase 1 has started! Please, register your team [here](./leaderboard) and wait for the activation email to start the challenge</span>
 # Introduction
