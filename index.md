@@ -17,7 +17,7 @@ Welcome to the Image Analysis for CTA Endovascular Stroke Therapy (IACTA-EST) Da
 
 # ISBI 2023 - April 18 at 9:00am (CST)
 
-Join us on April 18 at the 2023 IEEE International Symposium on Biomedical Imaging (ISBI) for an exciting session where the finalists will discuss the technique used to compete in this challenge. In addition, we will host a special talk entitled: "Machine Learning in Neurovascular Care" by a renown expert in medical image computing for Stroke care, Prof. Fabien Scalzo Associate Professor of Computer Science & Neurology at Pepperdine University and UCLA.
+Join us on April 18, 9:00am (CST) at the 2023 IEEE International Symposium on Biomedical Imaging (ISBI) for an exciting session where the finalists will discuss the technique used to compete in this challenge. In addition, we will host a special talk entitled: "Machine Learning in Neurovascular Care" by a renown expert in medical image computing for Stroke care, Prof. Fabien Scalzo Associate Professor of Computer Science & Neurology at Pepperdine University and UCLA.
 
 # Introduction
 
