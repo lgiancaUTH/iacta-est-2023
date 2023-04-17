@@ -14,6 +14,11 @@ Welcome to the Image Analysis for CTA Endovascular Stroke Therapy (IACTA-EST) Da
 <span style="color:red">- 15 Mar 2023 - Phase 2 has started! Please, download the final datasets [here](./leaderboard) and submit your final results by March 20, 2023</span> <br />
 
 <span style="color:red"> - 15 Jan 2023 - Phase 1 has started! Please, register your team [here](./leaderboard) and wait for the activation email to start the challenge</span>
+
+# ISBI 2023 - April 18 at 9:00am (CST)
+
+Join us on April 18 at the 2023 IEEE International Symposium on Biomedical Imaging (ISBI) for an exciting session where the finalists will discuss the technique used to compete in this challenge. In addition, we will host a special talk entitled: "Machine Learning in Neurovascular Care" by a renown expert in medical image computing for Stroke care, Prof. Fabien Scalzo Associate Professor of Computer Science & Neurology at Pepperdine University and UCLA.
+
 # Introduction
 
 Large vessel occlusion (LVO) denotes the obstruction of large, proximal cerebral arteries and accounts for 24–46% of acute ischemic stroke (AIS). Due to the involvement of proximal vasculature, significant brain regions are often affected, resulting in large neurological deficits. Brain CT-Angiography (CTA) is an imaging modality available in the vast majority of hospitals 24/7, which is typically used to identify LVO. A quick identification is essential to enable endovascular stroke therapy (EST), a life-saving treatment. EST is a procedure that mechanically removes the clot from the brain blood vessel causing the LVO by mechanical means with a stent. To facilitate this, automated imaging-based tools to detect LVO have been shown to reduce the time for EST, leading to better clinical outcomes. While commercial solutions have recently addressed this medical image computing application, no comparative tests on a common dataset have been performed. We aim to bridge this gap with the first task of the Image Analysis for CTA Endovascular Stroke Therapy (IACTA-EST) Data Challenge by providing a curated imaging dataset from multiple clinical sites with evaluation metrics. 
