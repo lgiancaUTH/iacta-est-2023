@@ -1,5 +1,7 @@
 ---
 layout: default
+permalink: /index-april-2023
+title: index-april-2023
 ---
 
 <script type="text/javascript" src="header.js"></script>
@@ -8,10 +10,16 @@ layout: default
 Welcome to the Image Analysis for CTA Endovascular Stroke Therapy (IACTA-EST) Data Challenge! A date challenge part of the [2023 IEEE International Symposium on Biomedical Imaging (ISBI)](http://2023.biomedicalimaging.org/en/CHALLENGES.html). 
 
  
-<span style="color:red">The 2023 challenge submission has ended! Congratulations to the <a href="results-2023">winning teams!</a></span> <br />
 
-The submission website is currently not accepting any more submissions as the 2023 challenge has ended. We will reopen it soon. Please, stay tuned!
+<span style="color:red">- 21 Mar 2023 - The challenge submissions have ended! The top teams will be notified for the participation to the meeting at ISBI 2023. The submission website will be temporarily frozen.</span> <br />
 
+<span style="color:red">- 15 Mar 2023 - Phase 2 has started! Please, download the final datasets [here](./leaderboard) and submit your final results by March 20, 2023</span> <br />
+
+<span style="color:red"> - 15 Jan 2023 - Phase 1 has started! Please, register your team [here](./leaderboard) and wait for the activation email to start the challenge</span>
+
+# ISBI 2023 - April 18 at 9:00am (CST)
+
+Join us on April 18, 9:00am (CST) at the 2023 IEEE International Symposium on Biomedical Imaging (ISBI) for an exciting session where the finalists will discuss the technique used to compete in this challenge. In addition, we will host a special talk entitled: "Machine Learning in Neurovascular Care" by a renown expert in medical image computing for Stroke care, Prof. Fabien Scalzo Associate Professor of Computer Science & Neurology at Pepperdine University and UCLA.
 
 # Introduction
 
@@ -44,10 +52,17 @@ The final scores will be given independently for the two tasks. In both cases, t
 More information about the format of the submission is available [here](data-info). 
 
 ### Team Registration
-The registration has now ended.
+The team can register at the Submission and Leaderboard page by submitting a request with a valid email address. The organizers will manually activate the account and the participants will receive a confirmation email. 
+
+## Important Dates
+- 15 Jan 2023: Phase 1. Data Released and registration/submissions system open for evaluation of results. 
+- 15 Mar 2023: Phase 2. Test set released. Segmentation results of this phase can only be submitted twice (only best results will be considered).
+- 20 Mar 2023: Submission closed. Final off-site leaderboard update. Top teams will be notified for the participation to the meeting at ISBI 2023. 
+- 18 April 2023: Finalist presentations at ISBI 2023.
 
 ## Other Information
 
+The top-performing participating teams and individuals (based on the performance of their method) will be invited to contribute to a joint journal paper describing and summarizing the methods used, and the results found during the challenge. 
 
 For more information, please contact us at: iacta-est AT uth.tmc.edu 
 

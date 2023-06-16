@@ -7,6 +7,7 @@
 var menuBar = ' \
 <a href="./" class="btn">Home</a> \
 <a href="data-info" class="btn">Data Info</a> \
+<a href="results-2023" class="btn">Final Results (2023)</a> \
 <a href="leaderboard" class="btn">Submission and Leaderboard</a> \
 ';
 
