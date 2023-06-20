@@ -21,11 +21,11 @@ Department of Computing, Imperial College London, London, UK; Lucida Medical Ltd
 
 **AI Cracker 2023**
 
-Yanbo J. Wang, Sheng Chen, Hui Qin, Zhe Sun, Na Zhang, Min Yuan, Xuan Yang, Na Zhang
+Yanbo J. Wang, Sheng Chen, Hui Qin, Zhe Sun, Na Zhang, Min Yuan, Xuan Yang
 
 LYZD-FinTech Co., LTD , Beijing, China
 
-Yan Li, Qu Liu
+Qu Liu, Yan Li
 
 The First Medical Center, Chinese PLA General Hospital, Beijing, China
 
